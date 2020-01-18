@@ -1,0 +1,21 @@
+body{
+	margin: 0 auto;
+}
+li{
+    width:60%;
+    text-align:center;
+    font-size:20px;
+}
+ul{
+    width:100%;
+}
+.container{
+width:100%;
+margin:0 auto;
+}
+.card{
+    width:30%;
+    flex-direction:row;
+    float:left;
+    margin:30px;
+}
