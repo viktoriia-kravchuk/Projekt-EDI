@@ -1,44 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Books</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Biała Strona</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
-    <header>
-          <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <span class="navbar-brand" id="books">Books</span>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <span class="nav-link">Home <span class="sr-only">(current)</span></span>
-                </li>
-                <li class="nav-item">
-                  <span class="nav-link" id="top">TOP 10</span>
-                </li>
-                <li class="nav-item">
-                  <span class="nav-link" >Pricing</span>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        
-    </header>
-    <div class="container" id="container">
-       
-          </div>
-            
-    </div>
+    <!-- głowa -->
 
-    <script src="script.js"></script>
+    <header class="glowa">
+        <div class="menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./baza.html">baza ksiązek</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./statystyki.html">Statystyki</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./twórcy.html">Twórcy</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </header>
+
+    <!-- głowa -->
+
+    <!-- ciało -->
+    <main class="strona">
+        <section class="baner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                        <h3 class="title-text">Witaj w..</h3>
+                        <h1 class="title-text">księgarni..</h1>
+                        <h4 class="title-text text-uppercase">ONLINE!</h4>
+                    </div>
+                    <div class="col-lg-6 col-md-12 banner-image">
+                        <img src="./img/baner.png" alt="banner-img" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="informacje">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6-md-12">
+                        <div class="about-image">
+                            <img src="./img/jak.png" alt="jakto" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>Jak to</span>
+                            <span>działa?</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Nic prostszego! Wejdź w zakładę "baza ksiązek" i wybierz interesujący Cię jeden z 20 aktualnie dostępnych tytułów!
+                            </p>
+                            <p class="para">
+                                Następnie wyślij na książki@białastrona.pl swój adres oraz wybrany tytuł a książka pojawi się pod twoim drzwiami lada moment! Pierwsze 30 dni darmowe!
+                            </p>
+                        </div>
+                        <a href="./regulamin.pdf" download>
+                        <button type="button" class="btn button primary-button text-uppercase" style="padding-left: 3.5cm; padding-right: 3.5cm;">Pobierz regulamin</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+    <!-- ciało -->
+
+    <script src="./js/jquerry.3.4.1.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
+
+    
 </body>
 </html>
