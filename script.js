@@ -1,7 +1,7 @@
 $(document).ready(function(){
     function connect(){
         var method="GET";
-        var URL="https://cors-anywhere.herokuapp.com/http://manishtamaria.com/storerental/api/v1/books";
+        var URL="http://manishtamaria.com/storerental/api/v1/books";
         var request= new XMLHttpRequest;
         request.open(method,URL);
         request.onreadystatechange=function(){display(this)}
@@ -11,15 +11,15 @@ $(document).ready(function(){
         if(x.readyState==4 && x.status==200){
             var data=x.responseText;
             var books=JSON.parse(data);
-            for (var i=0;i<20;i++){
+            for (var i=0;i<30;i++){
                 var parentDiv=document.createElement('div');
                 var childDiv=document.createElement("div");
                 var thumbnail=document.createElement("img");
                 var description=document.createElement("p");
     
                 parentDiv.className="card";
-                parentDiv.style.width="10em";
-                parentDiv.style.height="15em";
+                parentDiv.style.width="19em";
+                parentDiv.style.height="25em";
                
                 thumbnail.className="card-img-top";
                 thumbnail.src=books[i].image.imageUrl;
