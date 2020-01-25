@@ -89,7 +89,7 @@
 }
 
 p.para{
-    color: blue
+    color: blue,
     font: normal 500 16px/25px 'Raleway';
 }
 
@@ -105,7 +105,7 @@ p.para{
     background: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
     background-clip: padding-box;
     color: whitesmoke;
-    transition: background.6s ease;
+    transition: 6s ease;
     box-shadow: blue;
 }
 
@@ -145,9 +145,10 @@ body {
     margin: 0;
 }
 
-#chartOne {
-   height: 400px;
+#chart {
+   height: 300px;
    width: 1000px;
+   font-size:20px;
  }
 
 #chartTwo {
