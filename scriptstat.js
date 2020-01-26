@@ -1,5 +1,5 @@
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'http://manishtamaria.com/storerental/api/v1/books');
+xhr.open('GET', 'http://cors-anywhere.herokuapp.com/http://manishtamaria.com/storerental/api/v1/books');
 xhr.addEventListener('load', function() {
   if (this.status == 200) {
     google.charts.load('current', {packages: ['corechart']});
