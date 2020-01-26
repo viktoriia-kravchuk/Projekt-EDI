@@ -1,7 +1,7 @@
 $(document).ready(function(){
     function connect(){
         var method="GET";
-        var URL="http://manishtamaria.com/storerental/api/v1/books";
+        var URL="http://cors-anywhere.herokuapp.com/http://manishtamaria.com/storerental/api/v1/books";
         var request= new XMLHttpRequest;
         request.open(method,URL);
         request.onreadystatechange=function(){display(this)}
